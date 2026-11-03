@@ -4,40 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · No One's Headspace Studio</title>
-<style>
-  body { font: 17px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; color: #1d2330; background: #fbfbfd; }
-  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  a { color: #2a5bd7; }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+<header class="top">
+  <a class="brand" href="./">No One's Headspace Studio</a>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+<main>
 <h1>Privacy Policy</h1>
-<p>No One's Headspace Studio · last updated November 3, 2026</p>
+<p class="meta">Last updated November 3, 2026</p>
 
 <p>No One's Headspace Studio ("the studio") is a private tool that its owner, Nuo Wen Lei, uses to upload their own videos to their own YouTube channel. It has no other users.</p>
 
-<h2>What the studio accesses</h2>
+<h2>YouTube API Services</h2>
+<p>The studio uses <strong>YouTube API Services</strong>. By using the studio you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information the studio receives from YouTube is also covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> (https://policies.google.com/privacy).</p>
+
+<h2>Information the studio accesses</h2>
 <p>When the owner connects their Google account, the studio asks for these YouTube permissions:</p>
 <ul>
   <li><code>youtube.upload</code>, to upload videos to the owner's channel;</li>
-  <li><code>youtube.force-ssl</code>, to add caption files and set details on those uploaded videos.</li>
+  <li><code>youtube.force-ssl</code>, to add caption files and a thumbnail to those videos, and to read their upload status.</li>
 </ul>
-<p>The studio only uploads videos and captions that the owner made, as private videos, and reads back only what it needs to confirm an upload, such as the video's ID and the channel's name. It does not read, change or delete other content, and it does not access any other Google data.</p>
+<p>Through the YouTube API Services the studio reads only:</p>
+<ul>
+  <li>the connected channel's name, to show which channel is connected;</li>
+  <li>for each video it uploads, the video's ID, its caption track's ID and its privacy status, to confirm the upload stayed private.</li>
+</ul>
+<p>It does not read, change or delete any other videos, comments, playlists, subscribers or analytics, and it does not access any other Google data.</p>
 
-<h2>How data is stored</h2>
-<p>The sign-in token Google issues is stored only on the owner's own computer, in a file readable only by the owner's account. It is never sent anywhere except to Google's own servers when the studio calls the YouTube API.</p>
+<h2>How information is used and stored</h2>
+<ul>
+  <li><strong>Sign-in token.</strong> The refresh token Google issues is stored only on the owner's own computer, in a file readable only by the owner's account. It is used only to call the YouTube API for the uploads described above.</li>
+  <li><strong>Upload records.</strong> For each upload, the studio saves the video ID, the caption track ID, the video's privacy status and a YouTube Studio link in the episode's folder on the owner's computer.</li>
+  <li><strong>No cookies or tracking.</strong> The studio does not use cookies, browser storage, analytics or advertising identifiers, and it does not store or read information on users' devices other than the files above on the owner's computer.</li>
+</ul>
 
 <h2>Sharing</h2>
-<p>The studio does not sell, share or transfer any Google user data to anyone. It does not use Google user data for advertising, and it does not use it to train AI or machine-learning models.</p>
+<p>The studio does not sell, share, transfer or disclose any information from YouTube API Services or Google accounts to any third party. It does not use that information for advertising, and it does not use it to train AI or machine-learning models.</p>
+<p>The studio's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-<h2>Google API Services User Data Policy</h2>
-<p>The studio's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Its use of YouTube API Services is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>Retention and deletion</h2>
+<ul>
+  <li><strong>Revoke access</strong> at any time from your Google account's security settings: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>. Once access is revoked, the stored token stops working.</li>
+  <li><strong>Deleting stored data.</strong> The sign-in token and upload records can be deleted from the owner's computer at any time. Ask for deletion by email (below); it is completed within 7 days, and the token is deleted when the YouTube connection is no longer needed.</li>
+  <li>Apart from the sign-in token and the upload records above, the studio does not keep any data received from YouTube API Services. The channel name is shown when needed and is not saved.</li>
+</ul>
 
-<h2>Removing access</h2>
-<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Once access is revoked, the stored token no longer works, and the owner can delete it from their computer.</p>
+<h2>Changes</h2>
+<p>Changes to this policy are posted on this page with a new "last updated" date.</p>
 
 <h2>Contact</h2>
-<p><a href="mailto:nuowen0612@gmail.com">nuowen0612@gmail.com</a></p>
+<p>Nuo Wen Lei · <a href="mailto:nuowen0612@gmail.com">nuowen0612@gmail.com</a></p>
+</main>
+<footer>
+  <a href="./">Home</a> · <a href="terms.html">Terms of Service</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+</footer>
 </body>
 </html>
